@@ -1,0 +1,21 @@
+{
+	"pages": [{
+			"path": "pages/quiz/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/quiz/quiz",
+			"style": {
+				"navigationBarTitleText": "问题"
+			}
+		},
+		{
+			"path": "pages/quiz/result",
+			"style": {
+				"navigationBarTitleText": "答案"
+			}
+		}
+	]
+}

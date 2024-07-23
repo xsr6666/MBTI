@@ -1,0 +1,1 @@
+<view class="container"><text>您的MBTI性格类型是：{{a}}</text></view>

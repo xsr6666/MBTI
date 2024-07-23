@@ -1,0 +1,88 @@
+
+.container.data-v-07e72d3c {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+		background: url('../../static/banner.png') no-repeat center center fixed;
+		background-size: cover;
+		min-height: 100vh;
+}
+.header.data-v-07e72d3c {
+		text-align: center;
+		margin-bottom: 20px;
+}
+.title.data-v-07e72d3c {
+		font-size: 32px;
+		font-weight: bold;
+		color: #fff;
+		text-shadow: 2px 2px 4px #ff69b4;
+		font-family: 'Patrick Hand', cursive;
+}
+.card.data-v-07e72d3c {
+		background-color: rgba(255, 255, 255, 0.8);
+		border-radius: 15px;
+		padding: 20px;
+		margin-bottom: 20px;
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+		width: 90%;
+		text-align: center;
+}
+.info.data-v-07e72d3c {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+}
+.label.data-v-07e72d3c {
+		font-weight: bold;
+		color: #555;
+		font-family: 'Patrick Hand', cursive;
+}
+.value.data-v-07e72d3c {
+		color: #333;
+		font-family: 'Patrick Hand', cursive;
+}
+.dog-image.data-v-07e72d3c {
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+		margin-top: 20px;
+}
+.button.data-v-07e72d3c {
+		width: 80%;
+		padding: 12px;
+		background-color: #ff69b4;
+		color: #fff;
+		border: none;
+		border-radius: 5px;
+		text-align: center;
+		font-size: 18px;
+		margin-top: 20px;
+		font-family: 'Patrick Hand', cursive;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.popup-content.data-v-07e72d3c {
+		padding: 20px;
+		text-align: center;
+}
+.popup-title.data-v-07e72d3c {
+		font-size: 18px;
+		font-weight: bold;
+		color: #ff69b4;
+		margin-bottom: 10px;
+		font-family: 'Patrick Hand', cursive;
+}
+.popup-tip.data-v-07e72d3c {
+		font-size: 16px;
+		color: #333;
+		margin-bottom: 20px;
+		font-family: 'Patrick Hand', cursive;
+}
+.popup-button.data-v-07e72d3c {
+		padding: 10px 20px;
+		background-color: #ff69b4;
+		color: #fff;
+		border: none;
+		border-radius: 5px;
+		font-family: 'Patrick Hand', cursive;
+}

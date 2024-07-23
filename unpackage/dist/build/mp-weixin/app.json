@@ -1,0 +1,8 @@
+{
+  "pages": [
+    "pages/quiz/index",
+    "pages/quiz/quiz",
+    "pages/quiz/result"
+  ],
+  "usingComponents": {}
+}

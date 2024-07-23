@@ -1,0 +1,1 @@
+<view class="container"><button bindtap="{{a}}">开始答题</button></view>

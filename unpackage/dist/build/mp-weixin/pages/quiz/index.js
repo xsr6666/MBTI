@@ -1,0 +1,1 @@
+"use strict";const t=require("../../common/vendor.js"),e={methods:{startQuiz(){t.index.navigateTo({url:"/pages/quiz/quiz"})}}};const r=t._export_sfc(e,[["render",function(e,r,s,i,n,o){return{a:t.o(((...t)=>o.startQuiz&&o.startQuiz(...t)))}}]]);wx.createPage(r);

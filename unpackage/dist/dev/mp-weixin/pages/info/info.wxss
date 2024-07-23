@@ -1,0 +1,63 @@
+
+.container.data-v-f52d2d81 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+		background: url('../../static/R.jpg') no-repeat center center fixed;
+		background-size: cover;
+		min-height: 100vh;
+}
+.header.data-v-f52d2d81 {
+		text-align: center;
+		margin-bottom: 20px;
+}
+.title.data-v-f52d2d81 {
+		font-size: 32px;
+		font-weight: bold;
+		color: #fff;
+		text-shadow: 2px 2px 4px #ff69b4;
+		font-family: 'Patrick Hand', cursive;
+}
+.swiper.data-v-f52d2d81 {
+		width: 100%;
+		height: 200px;
+		margin-bottom: 20px;
+}
+.swiper-image.data-v-f52d2d81 {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 15px;
+}
+.form.data-v-f52d2d81 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: rgba(255, 255, 255, 0.8);
+		padding: 20px;
+		border-radius: 15px;
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.input.data-v-f52d2d81 {
+		width: 80%;
+		padding: 10px;
+		margin: 10px 0;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		font-family: 'Patrick Hand', cursive;
+}
+.button.data-v-f52d2d81 {
+		width: 80%;
+		padding: 12px;
+		background-color: #ff69b4;
+		color: #fff;
+		border: none;
+		border-radius: 5px;
+		text-align: center;
+		font-size: 18px;
+		margin-top: 20px;
+		font-family: 'Patrick Hand', cursive;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
