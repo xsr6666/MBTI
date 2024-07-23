@@ -1,5 +1,11 @@
 {
 	"pages": [{
+			"path": "pages/quiz/welcome",
+			"style": {
+				"navigationBarTitleText": "欢迎"
+			}
+		},
+		{
 			"path": "pages/quiz/index",
 			"style": {
 				"navigationBarTitleText": "首页"
@@ -15,6 +21,13 @@
 			"path": "pages/quiz/result",
 			"style": {
 				"navigationBarTitleText": "答案"
+			}
+		},
+		{
+			"path" : "pages/quiz/result1",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
 			}
 		}
 	]

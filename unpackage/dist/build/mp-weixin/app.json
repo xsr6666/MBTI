@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/quiz/welcome",
     "pages/quiz/index",
     "pages/quiz/quiz",
     "pages/quiz/result"

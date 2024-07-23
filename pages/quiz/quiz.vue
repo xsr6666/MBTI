@@ -18,10 +18,7 @@
 				</view>
 			</swiper-item>
 		</swiper>
-		<view v-if="allQuestionsAnswered" class="congratulations-container">
-			<view class="congratulations">恭喜你</view>
-			<button @click="submitQuiz" class="submit-button">提交</button>
-		</view>
+		<view class="counter">{{ answeredCount }}/{{ questions.length }}</view>
 	</view>
 </template>
 
@@ -36,8 +33,8 @@
 			};
 		},
 		computed: {
-			allQuestionsAnswered() {
-				return this.answers.length === this.questions.length;
+			answeredCount() {
+				return this.answers.filter(answer => answer !== null).length;
 			}
 		},
 		onLoad() {
@@ -51,6 +48,7 @@
 					});
 					if (res.result && res.result.data) {
 						this.questions = res.result.data;
+						this.answers = new Array(this.questions.length).fill(null); // 初始化answers数组
 					}
 				} catch (e) {
 					console.error(e);
@@ -60,7 +58,9 @@
 			},
 			selectAnswer(index, value) {
 				this.$set(this.answers, index, value);
-				if (this.currentIndex < this.questions.length) {
+				if (index === this.questions.length - 1) {
+					this.submitQuiz();
+				} else if (this.currentIndex < this.questions.length - 1) {
 					this.currentIndex++;
 				}
 			},
@@ -78,17 +78,30 @@
 </script>
 
 <style>
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		overflow: hidden;
+	}
+
 	.container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		height: 80vh;
+		height: 100vh;
+		/* 确保容器高度为视口高度 */
 		background: #f5f5f5;
 		padding: 20px;
+		box-sizing: border-box;
 		background-image: url('/static/11.png');
 		background-size: cover;
 		background-position: center;
+		background-repeat: no-repeat;
+		/* 确保背景图不重复 */
+		position: relative;
+		/* 确保子元素能够使用绝对定位 */
 	}
 
 	.loading {
@@ -98,7 +111,8 @@
 
 	.swiper-container {
 		width: 100%;
-		height: 80%;
+		flex: 1;
+		/* 确保swiper占据剩余空间 */
 	}
 
 	.swiper-item {
@@ -150,45 +164,14 @@
 		font-size: 15px;
 	}
 
-	.congratulations-container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		flex: 1;
-		width: 100%;
-	}
-
-	.congratulations {
-		font-size: 18px;
-		font-weight: bold;
-		color: #656565;
-		margin-bottom: 30px;
-		background: #fff;
-		padding: 40px;
-		border-radius: 10px;
-		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-		width: 80%;
-		max-width: 600px;
-		text-align: center;
-		margin-bottom: 30px;
-	}
-
-	.submit-button {
-		background: #ffffff;
-		color: #00aa7f;
-		padding: 8px 40px;
-		border-radius: 25px;
-		margin: 8px 0px;
-		text-align: center;
-		cursor: pointer;
-		transition: background 0.3s;
-		margin-top: 20px;
-		font-weight: bold;
-	}
-
-	.submit-button:hover {
-		background: #4c4c4c;
+	.counter {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		background: rgba(222, 222, 222, 0.6);
 		color: white;
+		padding: 5px 10px;
+		border-radius: 5px;
+		font-size: 14px;
 	}
 </style>

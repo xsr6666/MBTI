@@ -1,0 +1,1 @@
+<view class="container data-v-d6794c8e"><view class="title animated-title data-v-d6794c8e">探索之旅</view><view class="subtitle data-v-d6794c8e">开始你的自探旅程</view><button class="start-button data-v-d6794c8e" bindtap="{{a}}">立即体验</button><view class="footer data-v-d6794c8e">继续即表示您同意《脑脑服务协议》和《隐私条款》</view></view>
